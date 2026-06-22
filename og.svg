@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="DockeTT — Coming soon">
+  <!-- Flat Docket Navy field -->
+  <rect width="1200" height="630" fill="#0B1E3F" />
+
+  <!-- Seal mark, dark colorway, on 100x100 grid scaled to 140px at (110,110) -->
+  <g transform="translate(110 110) scale(1.4)">
+    <rect x="0"  y="0"  width="100" height="100" rx="14"  fill="#FAFAF7" />
+    <rect x="18" y="26" width="64"  height="11"  rx="1.5" fill="#0B1E3F" />
+    <rect x="34" y="26" width="11"  height="48"  rx="1.5" fill="#0B1E3F" />
+    <rect x="55" y="26" width="11"  height="48"  rx="1.5" fill="#0B1E3F" />
+    <circle cx="82" cy="82" r="4" fill="#3B82F6" />
+  </g>
+
+  <!-- Wordmark: Docke (500) + TT (700) with Signal crossbar -->
+  <text x="110" y="400" font-family="Inter, -apple-system, 'Segoe UI', sans-serif" font-size="120" letter-spacing="-4.8" fill="#FAFAF7"><tspan font-weight="500">Docke</tspan><tspan font-weight="700">TT</tspan></text>
+  <!-- Signal Blue crossbar above the TT glyph pair -->
+  <rect x="540" y="296" width="118" height="7" rx="0.5" fill="#3B82F6" />
+
+  <!-- Editorial serif tagline -->
+  <text x="112" y="470" font-family="'Source Serif 4', Georgia, serif" font-style="italic" font-size="34" fill="#8FA3C9">The independent record for the AI agent economy.</text>
+
+  <!-- Status pill -->
+  <g transform="translate(112 520)">
+    <rect x="0" y="0" width="208" height="44" rx="22" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" />
+    <circle cx="28" cy="22" r="5" fill="#3B82F6" />
+    <text x="48" y="29" font-family="Inter, sans-serif" font-size="15" font-weight="500" letter-spacing="2.7" fill="#FAFAF7">COMING SOON</text>
+  </g>
+</svg>

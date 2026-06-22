@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>DockeTT — Coming soon</title>
+  <meta name="description" content="DockeTT is the independent record of every AI agent action — cryptographically attested, regulator-ready, cross-platform. Coming soon." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="DockeTT — Coming soon" />
+  <meta property="og:description" content="The independent record for the AI agent economy. Coming soon." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dockett.ai/" />
+  <meta property="og:image" content="https://dockett.ai/og.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Brand seal favicon (dark colorway) -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Fonts: Inter (UI/wordmark) + Source Serif 4 (editorial subhead) — Design System §4.1 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Source+Serif+4:ital,wght@1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    /* DockeTT Design System v1.0 — canonical tokens (§3.1) */
+    :root {
+      --color-navy: #0B1E3F;
+      --color-signal: #3B82F6;
+      --color-paper: #FAFAF7;
+      --color-slate-500: #8FA3C9;   /* secondary text on Navy */
+      --ring: rgba(255, 255, 255, 0.08);
+      --surface-faint: rgba(255, 255, 255, 0.04);
+
+      --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+      --font-serif: 'Source Serif 4', ui-serif, Georgia, 'Times New Roman', serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+
+    body {
+      font-family: var(--font-sans);
+      /* Flat Docket Navy — no gradient (Design System §12.2) */
+      background: var(--color-navy);
+      color: var(--color-paper);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 24px;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    .wrap {
+      text-align: center;
+      width: 100%;
+      max-width: 520px;
+      /* Subtle entrance — opacity + translate only, no glow/shadow */
+      animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    /* Seal mark — §2.2 geometry, dark colorway (§2.4) */
+    .seal {
+      width: 72px;
+      height: 72px;
+      display: block;
+      margin: 0 auto 32px;
+    }
+
+    /* Wordmark — §2.1: Docke (500) + TT (700), tracking -0.04em */
+    .wordmark {
+      font-weight: 500;
+      font-size: clamp(40px, 9vw, 68px);
+      letter-spacing: -0.04em;
+      line-height: 1;
+      color: var(--color-paper);
+      margin-bottom: 28px;
+    }
+    /* The TT carries a Signal Blue crossbar accent above it (§2.1) */
+    .wordmark .tt {
+      font-weight: 700;
+      position: relative;
+      display: inline-block;
+      padding-top: 0.2em;
+    }
+    .wordmark .tt::before {
+      content: "";
+      position: absolute;
+      top: 0.04em;
+      left: 0;
+      right: 0;
+      height: 0.06em;          /* ~6% of cap height */
+      background: var(--color-signal);
+      border-radius: 0.5px;
+    }
+
+    /* Status pill — §6.2 badge, adapted for Navy surface */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-paper);
+      background: var(--surface-faint);
+      border: 1px solid var(--ring);
+      border-radius: 999px;
+      padding: 8px 16px;
+    }
+    /* Signal Blue attestation dot — static, no pulse/glow (§12.2) */
+    .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--color-signal);
+    }
+
+    /* Tagline — editorial serif subhead (§4.3), sentence case, brand voice (§9.3) */
+    .tag {
+      margin-top: 24px;
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: clamp(18px, 4.5vw, 22px);
+      line-height: 1.4;
+      color: var(--color-slate-500);
+    }
+
+    footer {
+      position: fixed;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 12px;
+      color: var(--color-slate-500);
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .wrap { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <!-- Seal mark, dark colorway: Paper square, Navy double-T, Signal attestation dot -->
+    <svg class="seal" viewBox="0 0 100 100" role="img" aria-label="DockeTT seal">
+      <rect x="0"  y="0"  width="100" height="100" rx="14"  fill="#FAFAF7" />
+      <rect x="18" y="26" width="64"  height="11"  rx="1.5" fill="#0B1E3F" />
+      <rect x="34" y="26" width="11"  height="48"  rx="1.5" fill="#0B1E3F" />
+      <rect x="55" y="26" width="11"  height="48"  rx="1.5" fill="#0B1E3F" />
+      <circle cx="82" cy="82" r="4" fill="#3B82F6" />
+    </svg>
+
+    <h1 class="wordmark">Docke<span class="tt">TT</span></h1>
+
+    <p class="badge"><span class="dot" aria-hidden="true"></span> Coming soon</p>
+
+    <p class="tag">The independent record for the AI agent economy.</p>
+  </main>
+
+  <footer>&copy; <span id="yr"></span> DockeTT, Inc. All rights reserved.</footer>
+
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
