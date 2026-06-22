@@ -16,8 +16,11 @@
   <!-- Signal Blue crossbar above the TT glyph pair -->
   <rect x="540" y="296" width="118" height="7" rx="0.5" fill="#3B82F6" />
 
+  <!-- Editorial serif tagline -->
+  <text x="112" y="470" font-family="'Source Serif 4', Georgia, serif" font-style="italic" font-size="34" fill="#8FA3C9">Trust and transparency for the AI agent era.</text>
+
   <!-- Status pill -->
-  <g transform="translate(112 470)">
+  <g transform="translate(112 520)">
     <rect x="0" y="0" width="208" height="44" rx="22" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" />
     <circle cx="28" cy="22" r="5" fill="#3B82F6" />
     <text x="48" y="29" font-family="Inter, sans-serif" font-size="15" font-weight="500" letter-spacing="2.7" fill="#FAFAF7">COMING SOON</text>
